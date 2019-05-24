@@ -1,48 +1,41 @@
 {
   "name": "react-immutable-proptypes",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "PropType validators that work with Immutable.js.",
   "main": "dist/ImmutablePropTypes.js",
   "scripts": {
-    "build": "./scripts/build",
-    "test": "./scripts/test",
-    "test-cov": "./scripts/test-cov",
-    "prepublish": "npm run build",
-    "lint": "./node_modules/.bin/eslint ./src"
+    "build": "webpack --mode production",
+    "lint": "eslint -c .eslintrc src"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/HurricaneJames/react-immutable-proptypes"
+    "url": "https://github.com/eliberty/react-immutable-proptypes"
   },
-  "keywords": [
-    "react",
-    "immutable-js",
-    "immutable",
-    "immutablejs",
-    "proptype"
-  ],
   "author": "James Burnett <HurricaneJamesEsq@gmail.com> (https://github.com/HurricaneJames/react-immutable-proptypes)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HurricaneJames/react-immutable-proptypes/issues"
+    "url": "https://github.com/eliberty/react-immutable-proptypes/issues"
   },
-  "homepage": "https://github.com/HurricaneJames/react-immutable-proptypes",
+  "homepage": "https://github.com/eliberty/react-immutable-proptypes",
   "peerDependencies": {
     "immutable": ">=3.6.2"
   },
   "devDependencies": {
-    "babel": "^4.6.6",
-    "babel-eslint": "^3.1.1",
-    "eslint": "^0.21.0",
-    "eslint-plugin-react": "^2.2.0",
-    "expect.js": "^0.3.1",
-    "immutable": "^3.7.4",
-    "istanbul": "~0.3.7",
-    "mocha": "^2.3.3",
-    "react": "^0.14.0",
-    "react-dom": "^0.14.0"
-  },
-  "dependencies": {
-    "invariant": "^2.2.2"
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.6",
+    "babel-preset-airbnb": "^3.2.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "immutable": "^4.0.0-rc.12",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
   }
 }
